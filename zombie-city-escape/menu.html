@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie City Escape - Menu</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="menu-page menu-theme">
+      <div class="menu-shell">
+        <div class="menu-left">
+          <div class="menu-logo">
+            <span class="menu-logo-top">Zombie</span>
+            <span class="menu-logo-mid">City</span>
+            <span class="menu-logo-bottom">Escape</span>
+          </div>
+          <div class="menu-badge">
+            <div class="menu-avatar">
+              <span>🧟</span>
+            </div>
+            <div class="menu-badge-text">
+              <p class="menu-badge-title">Survive The Night</p>
+              <p class="menu-badge-sub">
+                Run, jump, and slide through the ruins. Hit the target distance before the horde catches you.
+              </p>
+            </div>
+          </div>
+          <div class="menu-buttons">
+            <button id="menuStartButton" class="menu-button primary" type="button">Start</button>
+            <button class="menu-button" type="button" data-menu="levels">Levels</button>
+            <button class="menu-button" type="button" data-menu="scores">Stats</button>
+            <button class="menu-button" type="button" data-menu="about">About</button>
+          </div>
+          <p class="menu-hint">Press Enter to start • Use buttons to navigate</p>
+        </div>
+
+        <div class="menu-right">
+          <div class="menu-panel is-active" data-panel="levels">
+            <p class="menu-panel-title">Choose Your Level</p>
+            <p class="menu-panel-sub">
+              Each level ramps up speed and obstacle pressure. Pick where to begin your escape.
+            </p>
+            <div class="level-grid level-grid-hero">
+              <button class="level-pill is-selected" type="button" data-level="1">1</button>
+              <button class="level-pill" type="button" data-level="2">2</button>
+              <button class="level-pill" type="button" data-level="3">3</button>
+              <button class="level-pill" type="button" data-level="4">4</button>
+              <button class="level-pill" type="button" data-level="5">5</button>
+              <button class="level-pill" type="button" data-level="6">6</button>
+              <button class="level-pill" type="button" data-level="7">7</button>
+              <button class="level-pill" type="button" data-level="8">8</button>
+              <button class="level-pill" type="button" data-level="9">9</button>
+              <button class="level-pill" type="button" data-level="10">10</button>
+            </div>
+            <p class="menu-selected">
+              Selected Level: <strong id="menuSelectedLevelValue">1</strong>
+            </p>
+          </div>
+
+          <div class="menu-panel" data-panel="scores">
+            <p class="menu-panel-title">Your Records</p>
+            <div class="menu-stats">
+              <div class="menu-stat">
+                <span>High Score</span>
+                <strong id="menuHighScoreValueAlt">0</strong>
+              </div>
+              <div class="menu-stat">
+                <span>Last Score</span>
+                <strong id="menuLastScoreValue">0</strong>
+              </div>
+              <div class="menu-stat">
+                <span>Current Level</span>
+                <strong id="menuLevelValue">1</strong>
+              </div>
+              <div class="menu-stat">
+                <span>Target</span>
+                <strong id="menuTargetValue">3000</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-panel" data-panel="about">
+            <p class="menu-panel-title">Game Details</p>
+            <p class="menu-detail">
+              Dodge wrecked cars, hanging signs, and fire pits. Collect coins for bonus points and powerups for
+              shields or slow motion. Reach the target distance to clear each level.
+            </p>
+            <p class="menu-detail">
+              Controls: Arrow Up = Jump, Arrow Down = Slide, P = Pause, R = Restart, N = Next Level.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

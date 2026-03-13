@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie City Escape - Run or Die!</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <div class="hud">
+        <div class="hud-left">
+          <p>Level: <span id="levelValue">1</span></p>
+          <p>Target: <span id="targetValue">3000</span>m</p>
+        </div>
+
+        <div class="hud-center">
+          <div class="health-wrap">
+            <span>Health</span>
+            <div class="health-track">
+              <div id="healthFill" class="health-fill"></div>
+            </div>
+          </div>
+          <p id="statusText" class="status-text">Run for your life...</p>
+        </div>
+
+        <div class="hud-right">
+          <p>Distance: <span id="distanceValue">0</span>m</p>
+          <p>Coins: <span id="coinValue">0</span></p>
+          <p>Score: <span id="scoreValue">0</span>p</p>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+        <div id="pauseOverlay" class="overlay hidden">
+          <h2>⏸ Paused</h2>
+          <p>Press P to continue</p>
+        </div>
+
+        <div id="gameOverOverlay" class="overlay hidden">
+          <h1>💀 Game Over</h1>
+          <p>Final Score: <span id="finalScoreValue">0</span></p>
+          <p>High Score: <span id="finalHighScoreValue">0</span></p>
+          <button id="restartButton" type="button">🔄 Restart Game</button>
+          <p class="hint-text">Press R or click to restart</p>
+        </div>
+
+                <div id="levelCompleteOverlay" class="overlay hidden">
+          <div class="complete-card">
+            <h1>Level Complete!</h1>
+            <p>Level <span id="completedLevelValue">1</span> Finished</p>
+            <p class="level-stats">Distance: <span id="levelDistanceValue">0</span>m</p>
+            <p class="level-stats">Score: <span id="levelScoreValue">0</span>p</p>
+            <div class="overlay-actions">
+              <button id="nextLevelButton" type="button">Continue to Next Level</button>
+              <button id="backToMenuButton" type="button">Back to Menu</button>
+            </div>
+            <p class="hint-text">Press N to continue</p>
+          </div>
+        </div>
+
+        <div id="levelOneWinOverlay" class="overlay win-overlay hidden">
+          <div class="win-card">
+            <p class="win-eyebrow">Level 1 Complete</p>
+            <div class="win-title">
+              <span class="win-title-top">YOU</span>
+              <span class="win-title-bottom">WIN</span>
+            </div>
+            <p class="win-sub">Great job! You escaped the first wave.</p>
+            <div class="win-stats">
+              <p class="level-stats">Distance: <span id="winDistanceValue">0</span>m</p>
+              <p class="level-stats">Score: <span id="winScoreValue">0</span>p</p>
+            </div>
+            <div class="overlay-actions">
+              <button id="winNextLevelButton" type="button">Continue to Next Level</button>
+              <button id="winBackToMenuButton" type="button">Back to Menu</button>
+            </div>
+            <p class="hint-text">Press N to continue</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="controls">
+        <p><strong>⌨️ Controls:</strong> <span class="control-keys">↑ Jump</span> <span class="control-keys">↓ Slide</span> <span class="control-keys">P Pause</span> <span class="control-keys">R Restart</span> <span class="control-keys">N Next Level</span></p>
+      </section>
+    </main>
+
+    <script src="./js/game.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
