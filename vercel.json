@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/zombie-city-escape/menu.html",
+      "permanent": false
+    }
+  ]
+}
