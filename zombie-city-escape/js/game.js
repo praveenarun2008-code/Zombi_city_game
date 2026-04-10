@@ -29,20 +29,7 @@
   const backToMenuButton = document.getElementById('backToMenuButton');
   const winBackToMenuButton = document.getElementById('winBackToMenuButton');
 
-// const pauseOverlay = document.getElementById('pauseOverlay');
-// const gameOverOverlay = documnet.getElementById('gameOverOverlay');
-// const levelCompletedOverlay = document.getElementById('levelCompletedOverlay');
-// const levelOneWinOverlay = document.getElementById('levelOneWinOverlay');
-// const finalScoreEl = document.getElementById('finalScoreValue');
-// const completedLevelEl = document.getElementById('completedLevelValue');
-// const levelDistanceEl = document.getElementById('levelDistancevAkue');
-// const levelScoreEl = document.getElementById('levelScoreValue');
-// const winDistanceEl = documnet.getElementById('winDistanceValue');
-// const restartButton = docment.getElementById('restartButton');
-// const nextLevelButton = document.getElementById('nextLevelButton');
-// const winNextlevelButton = document.getElementById('winNextlevelButton');
-// const backToMenuButton = document.getElementById('backToMenuButton');
-// const winBackTomenuButton = document.getElementById('winbackToMenu');
+
 
 
 
