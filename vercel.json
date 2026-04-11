@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/zombie-city-escape/index.html",
+      "destination": "/zombie-city-escape/menu.html",
       "permanent": false
     }
   ]
