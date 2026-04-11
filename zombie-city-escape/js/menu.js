@@ -81,7 +81,7 @@
   levelButtons.forEach((button) => {
     button.addEventListener('click', () => {
       setSelectedLevel(Number(button.dataset.level));
-      setActiveMenuPanel('home');
+      setActiveMenuPanel('levels');
     });
   });
 

@@ -1,0 +1,11 @@
+{
+  "name": "zombie-city-escape",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static browser game deployment for Zombie City Escape",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"console.log('Static site build: nothing to compile')\""
+  }
+}

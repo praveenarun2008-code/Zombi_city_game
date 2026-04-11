@@ -1,75 +1,51 @@
 # Zombie City Escape
 
-Zombie City Escape is a browser-based 2D runner built with the Canvas API, plain JavaScript, HTML, and CSS. You sprint through a ruined city, dodge hazards, collect coins and powerups, and survive long enough to hit each level's distance target.
+Zombie City Escape is a survival runner game set in a ruined city filled with danger. Your only goal is to keep moving, avoid the zombie-filled streets, collect helpful items, and survive long enough to complete each level.
 
-## What It Includes
+The game is meant to feel fast and intense. Every run pushes you to react quickly, choose the right move, and stay focused while the city gets more dangerous.
 
-- 10 playable levels with distance-based goals
-- Fast endless-runner style movement with jump and slide controls
-- Multiple obstacle types including wrecked cars, hanging signs, fire pits, and boss zombies
-- Health, score, distance, and coin tracking in the HUD
-- Powerups for temporary shield and slow-motion effects
-- Pause, restart, and next-level flow
-- Menu screen with level selection and saved stats
-- Local high score and last score persistence using `localStorage`
-- Canvas-drawn visuals, layered city backgrounds, and lightweight sound effects with Web Audio
+## Game Goal
+
+- Run as far as you can without losing all your health
+- Reach the target distance for each level
+- Collect coins to increase your score
+- Grab powerups when you see them
+- Survive tougher levels as the challenge increases
 
 ## Controls
 
-- `Arrow Up` to jump
-- `Arrow Down` to slide
-- `P` to pause or resume
-- `R` to restart after game over
-- `N` to continue after clearing a level
+- `Arrow Up` = Jump
+- `Arrow Down` = Slide
+- `P` = Pause or resume
+- `R` = Restart after losing
+- `N` = Continue after clearing a level
 
-## Project Structure
+## Obstacles
 
-```text
-zombie-city-escape/
-|- index.html        # Main game screen
-|- menu.html         # Start screen and level selector
-|- css/styles.css    # Menu, HUD, canvas, and overlay styling
-|- js/game.js        # Core gameplay, rendering, and game state
-|- js/menu.js        # Menu interactions and saved stats
-|- IMPROVEMENTS.md   # Notes and future ideas
-```
+The city is full of hazards that can damage you if you react too late.
 
-## How To Run
+- Broken cars block your path
+- Hanging signs force you to slide
+- Fire pits punish bad timing
+- Boss zombies appear to add extra pressure
 
-You can open the files directly in a browser, but using a tiny local server is the most reliable option.
+## Helpful Items
 
-### Option 1: Open directly
+Some items can help you survive longer if you collect them at the right moment.
 
-Open `menu.html` in your browser to start from the game menu.
+- Coins increase your score and restore some health
+- Shields protect you from damage for a short time
+- Slow-motion powerups make the game easier for a few seconds
 
-### Option 2: Run a local server
+## Levels
 
-```bash
-cd zombie-city-escape
-python -m http.server 8080
-```
+The game has 10 levels. Each level has a distance target, and clearing that target completes the level. Later levels are faster, longer, and more difficult, so every win should feel earned.
 
-Then visit:
+## Tips
 
-- `http://localhost:8080/menu.html` for the menu
-- `http://localhost:8080/index.html` to open the game directly
-
-## Gameplay Notes
-
-- Each level has a target distance shown in the HUD.
-- Reaching the target completes the level and unlocks the next step in the run.
-- Coins increase score and restore some health.
-- Taking damage reduces health; hitting zero ends the run.
-- Boss zombies start appearing as your score climbs.
-
-## Built With
-
-- HTML5 Canvas
-- Vanilla JavaScript
-- CSS3
-- Browser `localStorage`
-- Web Audio API
-
-## Future Improvements
-
-Ideas for expanding the game are tracked in `IMPROVEMENTS.md`.
+- Watch the obstacle pattern before making a move
+- Jump for low obstacles and fire pits
+- Slide under hanging signs
+- Save your focus for boss zombie moments
+- Do not ignore coins, because the health boost can save a run
+- Keep practicing each level until the timing feels natural
